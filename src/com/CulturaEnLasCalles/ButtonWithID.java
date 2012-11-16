@@ -1,6 +1,8 @@
 package com.CulturaEnLasCalles;
 
+
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 public class ButtonWithID extends android.widget.Button {
 
@@ -11,6 +13,7 @@ public class ButtonWithID extends android.widget.Button {
 	
 	public ButtonWithID(Context context) {
 		super(context);
+		
 	}
 
 	public String getresultID() {
@@ -28,6 +31,13 @@ public class ButtonWithID extends android.widget.Button {
 	public void setInternalName(String internalName) {
 		this.internalName = internalName;
 	}
+
+	public void setOnClickListener(OnClickListener onClickListener) {
+		// TODO Auto-generated method stub
+		super.setOnClickListener(onClickListener);
+	}
+
+	
 	
 	
 

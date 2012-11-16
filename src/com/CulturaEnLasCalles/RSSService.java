@@ -1,12 +1,6 @@
 package com.CulturaEnLasCalles;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.URL;
-import java.net.URLConnection;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -19,25 +13,12 @@ import android.content.ContextWrapper;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.DeadObjectException;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Message;
-import android.provider.SyncStateContract.Constants;
-import android.util.Log;
 import android.widget.Toast;
 
 public class RSSService extends Service{
 	private String url;
 	 private ContextWrapper ctx;
-	/*class IncomingHandler extends Handler {
-		 // Handler of incoming messages from clients.
-		         @Override
-		         public void handleMessage(Message msg) {
-		            
-		             animacion=msg.arg1;
-		         }
-		     }*/
 	
 	@Override
 	public IBinder onBind(Intent intent) {

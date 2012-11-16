@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:onClick="ChooseADay"
         android:text="dia especifico" />
-
+<!-- 
 
     <Button
         android:id="@+id/button3"
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:onClick="ChooseADateRange"
         android:text="rango especial" />
+    -->
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"

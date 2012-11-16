@@ -1,31 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="3dip"
+    android:paddingTop="3dip" >
+
+   <Button
+		android:id="@+id/botonL"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:paddingTop="10dip"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip"
+		android:layout_marginLeft="5dip"
+		/>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-        android:background="@drawable/fondo">
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:orientation="horizontal">
-
-		<Button
-		    android:id="@+id/save"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:onClick="SaveProfile"
-		    android:text="Guardar perfil de busqueda" />
-
-	</LinearLayout>
-        <ScrollView 
+    android:layout_weight="1"
+    android:layout_marginLeft="6dip"
+    android:layout_marginRight="6dip"
+    >
+    
+   		<TextView
+        android:id="@+id/title"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:orientation="vertical"
-	    android:id="@+id/result">
-	
-	</LinearLayout>
-</ScrollView>
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+        android:maxLines="2"
+        />
+   		
+   		<TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dip"
+        android:maxLines="3" 
+        />
+   		
+        
+	</LinearLayout>    
+    
+
 </LinearLayout>

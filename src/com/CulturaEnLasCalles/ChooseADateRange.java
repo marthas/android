@@ -1,7 +1,6 @@
 package com.CulturaEnLasCalles;
 
 import java.util.Calendar;
-import java.util.Date;
 
 import android.app.Activity;
 import android.content.Intent;

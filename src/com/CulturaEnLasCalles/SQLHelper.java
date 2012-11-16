@@ -26,7 +26,10 @@ public class SQLHelper extends SQLiteOpenHelper {
 	}
 	
 	private void createDB(SQLiteDatabase db){
-		db.execSQL("CREATE TABLE Profiles (Category TEXT,Neighborhood TEXT)");
+		//db.execSQL("CREATE TABLE Profiles (Category TEXT,Neighborhood TEXT)");
+		db.execSQL("CREATE TABLE Profiles (Category TEXT)");
+		
 	}
+	
 
 }
